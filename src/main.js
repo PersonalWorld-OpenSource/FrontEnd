@@ -16,12 +16,12 @@ const routes = [
     {
         path: '/miscasos',
         name:"Mis Casos",
-        component:()=> import('./views/cases.vue')
+        component:()=> import('./views/Cases.vue')
     },
     {
         path: '/notificaciones',
         name:"Mis Notificaciones",
-        component:()=> import('./views/notifications.vue')
+        component:()=> import('./views/Notifications.vue')
     },
     {
         path: '/miabogado',
