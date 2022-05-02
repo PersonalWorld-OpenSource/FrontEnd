@@ -1,26 +1,28 @@
 <template>
-  <v-app>
+  <v-app className="bg-grey-lighten-3">
     <v-main>
-      <app-profile></app-profile>
-      <app-profile-setting></app-profile-setting
-    ></v-main>
+
+      <Header></Header>
+
+      <router-view></router-view>
+
+      <Footer></Footer>
+
+
+    </v-main>
   </v-app>
 </template>
 
 <script>
-import appProfile from "./views/app-profile.vue";
-import appProfileSetting from "./views/app-profile-setting.vue";
+import Header from './components/header.vue'
+import Footer from './components/footer.vue'
 
 export default {
-  name: "App",
+  name: 'App',
 
   components: {
-    appProfile,
-    appProfileSetting,
+    Header,
+    Footer,
   },
-
-  data: () => ({
-    //
-  }),
-};
+}
 </script>

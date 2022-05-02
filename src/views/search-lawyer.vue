@@ -76,9 +76,11 @@
         ></v-combobox>
       </div>
       <v-container class="d-flex justify-center">
+        <router-link class="text-decoration-none text-black" to="/lista-abogados">
         <v-btn color="#1C58AE" class="text-white">
           Buscar
         </v-btn>
+        </router-link>
       </v-container>
     </v-form>
   </v-card>

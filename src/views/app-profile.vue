@@ -33,8 +33,8 @@
           a line in section 1.10.
         </p>
         <div class="text-md-center">
-          <router-link class="text-decoration-none" to="">
-            <v-btn elevation="8">
+          <router-link class="text-decoration-none" to="/editar-perfil">
+            <v-btn elevation="8" class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5">
               <v-icon small>mdi-arrow-right-drop-circle</v-icon>
               Editar Perfil
             </v-btn>

@@ -9,7 +9,7 @@
           src="images/profilePicture.png"
         ></v-img>
         <div class="text-md-center mt-3">
-          <v-btn> Cambiar Imagen </v-btn>
+          <v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5"> Cambiar Imagen </v-btn>
         </div>
       </v-col>
       <v-col cols="8" md="7">
@@ -36,13 +36,13 @@
           a line in section 1.10.
         </p>
         <div class="text-md-center">
-          <v-btn elevation="8"> Cambiar Descripcion </v-btn>
+          <v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5" elevation="8"> Cambiar Descripcion </v-btn>
         </div>
       </v-col>
     </v-row>
     <v-container>
       <div class="text-right mt-16 pt-12">
-        <v-btn elevation="8">
+        <v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5" elevation="8">
           <v-icon small>mdi-arrow-right-drop-circle</v-icon>
           Guardar Cambios
         </v-btn>

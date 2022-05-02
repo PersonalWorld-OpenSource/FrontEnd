@@ -9,7 +9,7 @@
         <p>Contrary to popular belief alive vertain world</p>
         <p>Contrary to popular belief</p>
         <p>Contrary to popular belief</p>
-        <router-link class="text-decoration-none text-white" to=""><v-btn flat color="#1C58AE" class="mt-2" >
+        <router-link class="text-decoration-none text-white" to="/pagar"><v-btn flat color="#1C58AE" class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5">
           Pagar
         </v-btn></router-link>
       </v-card-text>
@@ -22,7 +22,7 @@
         <p>Contrary to popular belief alive vertain world</p>
         <p>Contrary to popular belief</p>
         <p>Contrary to popular belief</p>
-        <router-link class="text-decoration-none text-white" to=""><v-btn flat color="#1C58AE" class="mt-2" >
+        <router-link class="text-decoration-none text-white" to="/pagar"><v-btn flat color="#1C58AE" class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5">
           Pagar
         </v-btn></router-link>
       </v-card-text>
@@ -35,7 +35,7 @@
         <p>Contrary to popular belief alive vertain world</p>
         <p>Contrary to popular belief</p>
         <p>Contrary to popular belief</p>
-        <router-link class="text-decoration-none text-white" to=""><v-btn flat color="#1C58AE" class="mt-2" >
+        <router-link class="text-decoration-none text-white" to="/pagar"><v-btn flat color="#1C58AE" class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5">
           Pagar
         </v-btn></router-link>
       </v-card-text>
@@ -48,7 +48,7 @@
         <p>Contrary to popular belief alive vertain world</p>
         <p>Contrary to popular belief</p>
         <p>Contrary to popular belief</p>
-        <router-link class="text-decoration-none text-white" to=""><v-btn flat color="#1C58AE" class="mt-2" >
+        <router-link class="text-decoration-none text-white" to="/pagar"><v-btn flat class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5" color="#1C58AE">
           Pagar
         </v-btn></router-link>
       </v-card-text>

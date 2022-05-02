@@ -12,7 +12,9 @@
           text ever since the 1500.</p>
       </v-card-text>
       <v-card-actions class="justify-end mr-10 mb-2">
-        <v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5">Ver caso</v-btn>
+        <router-link class="text-decoration-none text-black" to="/micaso">
+          <v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5">Ver caso</v-btn>
+        </router-link>
       </v-card-actions>
     </v-card>
 
@@ -27,8 +29,9 @@
           text ever since the 1500.</p>
       </v-card-text>
       <v-card-actions class="justify-end mr-10 mb-2">
-
-        <v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5">Ver caso</v-btn>
+        <router-link class="text-decoration-none text-black" to="/micaso">
+          <v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5">Ver caso</v-btn>
+        </router-link>
       </v-card-actions>
     </v-card>
 
@@ -43,7 +46,9 @@
           text ever since the 1500.</p>
       </v-card-text>
       <v-card-actions class="justify-end mr-10 mb-2">
-        <v-btn class=" boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5">Ver caso</v-btn>
+        <router-link class="text-decoration-none text-black" to="/micaso">
+          <v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5">Ver caso</v-btn>
+        </router-link>
       </v-card-actions>
     </v-card>
 
@@ -58,8 +63,9 @@
           text ever since the 1500.</p>
       </v-card-text>
       <v-card-actions class="justify-end mr-10 mb-2">
-
-        <v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5">Ver caso</v-btn>
+        <router-link class="text-decoration-none text-black" to="/micaso">
+          <v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5">Ver caso</v-btn>
+        </router-link>
       </v-card-actions>
     </v-card>
 
@@ -74,8 +80,9 @@
           text ever since the 1500.</p>
       </v-card-text>
       <v-card-actions class="justify-end mr-10 mb-2">
-
-        <v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5">Ver caso</v-btn>
+        <router-link class="text-decoration-none text-black" to="/micaso">
+          <v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5">Ver caso</v-btn>
+        </router-link>
       </v-card-actions>
     </v-card>
 
@@ -90,8 +97,9 @@
           text ever since the 1500.</p>
       </v-card-text>
       <v-card-actions class="justify-end mr-10 mb-2">
-
-        <v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5">Ver caso</v-btn>
+        <router-link class="text-decoration-none text-black" to="/micaso">
+          <v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5">Ver caso</v-btn>
+        </router-link>
       </v-card-actions>
     </v-card>
 
@@ -106,8 +114,9 @@
           text ever since the 1500.</p>
       </v-card-text>
       <v-card-actions class="justify-end mr-10 mb-2">
-
-        <v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5">Ver caso</v-btn>
+        <router-link class="text-decoration-none text-black" to="/micaso">
+          <v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5">Ver caso</v-btn>
+        </router-link>
       </v-card-actions>
     </v-card>
   </div>
@@ -115,7 +124,7 @@
 
 <script>
 export default {
-  name: "Cases"
+  name: "cases",
 }
 </script>
 

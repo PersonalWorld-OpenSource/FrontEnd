@@ -21,10 +21,12 @@
             </v-row>
           </div>
     </v-container>
-    <v-btn class="mt-16 ma-10 d-flex justify-end font-weight-black">
-      <v-icon class="ml-n2 ma-2">mdi-chevron-right-circle-outline</v-icon>
-      Ver perfil
-    </v-btn>
+    <router-link class="text-decoration-none text-black" to="/miabogado">
+      <v-btn class="mt-16 ma-10 ml-10 d-flex justify-end font-weight-black boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5">
+        <v-icon class="ml-n2 ma-2">mdi-chevron-right-circle-outline</v-icon>
+        Ver perfil
+      </v-btn>
+    </router-link>
   </v-card>
 
   <v-card class="ma-5 ml-10 rounded-sm elevation-5 mx-auto d-flex justify-center" width="1100">
@@ -46,10 +48,12 @@
         </v-row>
       </div>
     </v-container>
-    <v-btn class="mt-16 ma-10 ml-10 d-flex justify-end font-weight-black">
-      <v-icon class="ml-n2 ma-2">mdi-chevron-right-circle-outline</v-icon>
-      Ver perfil
-    </v-btn>
+    <router-link class="text-decoration-none text-black" to="/miabogado">
+      <v-btn class="mt-16 ma-10 ml-10 d-flex justify-end font-weight-black boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5">
+        <v-icon class="ml-n2 ma-2">mdi-chevron-right-circle-outline</v-icon>
+        Ver perfil
+      </v-btn>
+    </router-link>
   </v-card>
 
   <v-card class="ma-5 ml-10 rounded-sm elevation-5 mx-auto d-flex justify-center" width="1100">
@@ -71,10 +75,12 @@
           </v-row>
       </div>
     </v-container>
-    <v-btn class="mt-16 ma-10 ml-10 d-flex justify-end font-weight-black">
-      <v-icon class="ml-n2 ma-2">mdi-chevron-right-circle-outline</v-icon>
-      Ver perfil
-    </v-btn>
+    <router-link class="text-decoration-none text-black" to="/miabogado">
+      <v-btn class="mt-16 ma-10 ml-10 d-flex justify-end font-weight-black boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5">
+        <v-icon class="ml-n2 ma-2">mdi-chevron-right-circle-outline</v-icon>
+        Ver perfil
+      </v-btn>
+    </router-link>
   </v-card>
 </template>
 
