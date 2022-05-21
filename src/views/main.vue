@@ -57,7 +57,7 @@
               is simply dummy text of the printing and typesetting industry.
               Lorem Ipsum has been the industry's standard dummy text ever since
               the 1500 dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text eversince
+              Lorem Ipsum has been the industry's standard dummy text ever since
               the 1500 dummy text of the printing and typesetting industry.
             </p>
           </v-card-text>
@@ -72,7 +72,7 @@
               is simply dummy text of the printing and typesetting industry.
               Lorem Ipsum has been the industry's standard dummy text ever since
               the 1500 dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text eversince
+              Lorem Ipsum has been the industry's standard dummy text ever since
               the 1500 dummy text of the printing and typesetting industry.
             </p>
           </v-card-text>
