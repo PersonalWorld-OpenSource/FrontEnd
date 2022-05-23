@@ -6,7 +6,7 @@
         <v-img
           max-height="600"
           max-width="600"
-          src="images/profilePicture.png"
+          :src="url"
         ></v-img>
       </v-col>
       <v-col cols="8" md="7">
@@ -42,6 +42,7 @@ export default {
       id: "",
       name: "",
       description: "",
+      url: "",
     };
   },
   created() {
@@ -53,6 +54,7 @@ export default {
         this.id = response.data.id;
         this.name = response.data.name;
         this.description = response.data.description;
+        this.url = response.data.url;
       });
     },
   },

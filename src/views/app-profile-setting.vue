@@ -6,10 +6,21 @@
         <v-img
           max-height="600"
           max-width="600"
-          src="images/profilePicture.png"
+          :src="url"
         ></v-img>
+        <v-form
+          class="rounded-lg bg-white pa-4 ma-11"
+          ref="form"
+          v-model="valid"
+        >
+          <v-text-field
+            v-model="url"
+            label="url"
+            required
+          ></v-text-field>
+        </v-form>
         <div class="text-md-center mt-3">
-          <v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5">
+          <v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5" @click="updateData()">
             Change Image
           </v-btn>
         </div>
@@ -63,6 +74,7 @@ export default {
       id: "",
       name: "",
       description: "",
+      url: "",
     };
   },
   created() {
@@ -74,13 +86,15 @@ export default {
         this.id = response.data.id;
         this.name = response.data.name;
         this.description = response.data.description;
+        this.url = response.data.url;
       });
     },
     updateData() {
       this.itemData = {
+        name: this.name,
+        url: this.url,
         description: this.description,
       };
-      console.log(this.itemData);
       this.profileService.update(this.id, this.itemData);
     },
   },
