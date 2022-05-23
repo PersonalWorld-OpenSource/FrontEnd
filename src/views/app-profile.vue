@@ -1,12 +1,8 @@
 <template>
   <v-container fluid>
-    <v-row
-      class="justify-center mt-16"
-      v-for="(oneProfile, index) in profiles.splice(0, 1)"
-      :key="index"
-    >
+    <v-row class="justify-center mt-16">
       <v-col cols="4" md="2">
-        <h2 class="text-md-center mb-5">{{ oneProfile.name }}</h2>
+        <h2 class="text-md-center mb-5">{{ name }}</h2>
         <v-img
           max-height="600"
           max-width="600"
@@ -15,7 +11,7 @@
       </v-col>
       <v-col cols="8" md="7">
         <p class="rounded-lg bg-white pa-4 ma-11">
-          {{ oneProfile.description }}
+          {{ description }}
         </p>
         <div class="text-md-center">
           <router-link class="text-decoration-none" to="/editar-perfil">
@@ -24,7 +20,7 @@
               class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5"
             >
               <v-icon small>mdi-arrow-right-drop-circle</v-icon>
-              Editar Perfil
+              Edit Profile
             </v-btn>
           </router-link>
         </div>
@@ -42,17 +38,24 @@ export default {
     return {
       oneProfile: [],
       profiles: [],
-      profileService: null,
+      profileService: new ProfilesApiService(),
+      id: "",
+      name: "",
+      description: "",
     };
   },
   created() {
-    this.profilesService = new ProfilesApiService();
-    this.profilesService.getAllProfiles().then((response) => {
-      this.profiles = response.data;
-    });
-    console.log(this.profiles);
+    this.refreshList();
   },
-  methods: {},
+  methods: {
+    refreshList() {
+      this.profileService.getById(1).then((response) => {
+        this.id = response.data.id;
+        this.name = response.data.name;
+        this.description = response.data.description;
+      });
+    },
+  },
 };
 </script>
 
