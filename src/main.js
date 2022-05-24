@@ -28,7 +28,7 @@ const routes = [
     component: () => import("./views/my-lawyer.vue"),
   },
   {
-    path: "/micaso",
+    path: "/micaso/:id",
     name: "Mi Caso",
     component: () => import("./views/my-case.vue"),
   },
