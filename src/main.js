@@ -23,7 +23,7 @@ const routes = [
     component: () => import("./views/Notifications.vue"),
   },
   {
-    path: "/miabogado",
+    path: "/miabogado/:id",
     name: "Mis Abogado",
     component: () => import("./views/my-lawyer.vue"),
   },
