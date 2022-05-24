@@ -7,7 +7,7 @@
   >
     <v-container class="d-flex">
       <v-img
-        src="/../public/images/FernandodelaCruz.png"
+        :src="index.url"
         width="188"
         height="157"
       ></v-img>
