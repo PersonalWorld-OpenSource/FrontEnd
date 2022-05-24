@@ -24,7 +24,7 @@
         </v-row>
       </div>
     </v-container>
-    <router-link class="text-decoration-none text-black" to="/miabogado">
+    <router-link class="text-decoration-none text-black" :to="`/miabogado/${index.id}`">
       <v-btn
         class="mt-16 ma-10 ml-10 d-flex justify-end font-weight-black boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5"
       >
