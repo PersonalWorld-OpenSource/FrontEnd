@@ -84,23 +84,27 @@
 
 <script>
 import { CasesApiService } from "../services/cases-api.service";
+import axios from "axios";
+import {NotificationsApiService} from "../services/notifications-api.service";
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "main",
   data() {
     return {
-      oneCase: [],
       cases: [],
       casesService: null,
+      notifications: [],
+      notificationsService: null
     };
   },
   created() {
     this.casesService = new CasesApiService();
-    this.casesService.getAllCases().then((response) => {
-      this.cases = response.data;
-    });
-    console.log(this.cases);
+    this.notificationsService = new NotificationsApiService();
+    axios.all([this.casesService.getAllCases(), this.notificationsService.getAllNotifications()]).then(responses => {
+      this.cases = responses[0].data
+      this.notifications = responses[1].data
+    })
   },
   methods: {},
 };
