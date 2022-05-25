@@ -55,6 +55,9 @@ export default {
     }
   },
   created() {
+    if(!this.$store.getters.inLogin) {
+      window.location.href = '/'
+    }
     this.lawyerService = new LawyersApiService();
     this.lawyerService.getByIndex(this.$route.params.id).then(
         response => {

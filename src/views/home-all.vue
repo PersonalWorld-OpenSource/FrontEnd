@@ -47,6 +47,9 @@ export default {
     };
   },
   created() {
+    if(this.$store.getters.inLogin) {
+      window.location.href = '/'
+    }
     this.lawyersService = new LawyersApiService();
     this.lawyersService.getAllLawyers().then((response) => {
       this.lawyers = response.data;

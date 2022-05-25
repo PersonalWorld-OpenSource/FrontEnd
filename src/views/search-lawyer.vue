@@ -98,6 +98,11 @@ export default {
       CateredCasesRange: ["10 a 30", "31 a 50", "51 a 70", "71 a 90"],
     };
   },
+  created() {
+    if(!this.$store.getters.inLogin) {
+      window.location.href = '/'
+    }
+  }
 };
 </script>
 
