@@ -62,6 +62,11 @@ const routes = [
     name: "Lista Abogados",
     component: () => import("./views/searched-lawyer.vue"),
   },
+  {
+    path: "/home-all",
+    name: "Home-All",
+    component: () => import("./views/home-all.vue"),
+  },
 ];
 
 const router = createRouter({

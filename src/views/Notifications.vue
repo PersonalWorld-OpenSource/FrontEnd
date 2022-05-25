@@ -1,151 +1,59 @@
 <template>
-  <div class="d-flex  flex-column  ma-auto mt-7">
-    <h2 class="text-center">Notificaciones</h2>
-    <v-card class="caso ma-5 rounded-lg">
-      <v-card-title >
-        <h3>Lorem Ipsum</h3>
-      </v-card-title>
-      <v-card-text>
-        <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500 dummy text of the printing and
-          typesetting industry. Lorem Ipsum has been the industry's standard dummy text eversince
-          the 1500 dummy text of the printing and typesetting industry.</p>
-      </v-card-text>
-      <v-card-actions class="justify-end mr-10 mb-2">
-        <router-link class="text-decoration-none text-black" to="/micaso">
-          <v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5">Ver Mensaje</v-btn>
-        </router-link>
-      </v-card-actions>
-    </v-card>
+  <div class="d-flex flex-column ma-auto mt-7">
+    <h2 class="text-center">Notifications</h2>
 
-    <v-card class="caso ma-5 rounded-lg">
-      <v-card-title >
-        <h3>Lorem Ipsum</h3>
-      </v-card-title>
-      <v-card-text>
-        <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500 dummy text of the printing and
-          typesetting industry. Lorem Ipsum has been the industry's standard dummy text eversince
-          the 1500 dummy text of the printing and typesetting industry.</p>
-      </v-card-text>
-      <v-card-actions class="justify-end mr-10 mb-2">
-        <router-link class="text-decoration-none text-black" to="/micaso">
-          <v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5">Ver Mensaje</v-btn>
-        </router-link>
-      </v-card-actions>
-    </v-card>
-
-    <v-card class="caso ma-5 rounded-lg">
-      <v-card-title >
-        <h3>Lorem Ipsum</h3>
-      </v-card-title>
-      <v-card-text>
-        <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500 dummy text of the printing and
-          typesetting industry. Lorem Ipsum has been the industry's standard dummy text eversince
-          the 1500 dummy text of the printing and typesetting industry.</p>
-      </v-card-text>
-      <v-card-actions class="justify-end mr-10 mb-2">
-        <router-link class="text-decoration-none text-black" to="/micaso">
-          <v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5">Ver Mensaje</v-btn>
-        </router-link>
-      </v-card-actions>
-    </v-card>
-
-    <v-card class="caso ma-5 rounded-lg">
-      <v-card-title >
-        <h3>Lorem Ipsum</h3>
-      </v-card-title>
-      <v-card-text>
-        <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500 dummy text of the printing and
-          typesetting industry. Lorem Ipsum has been the industry's standard dummy text eversince
-          the 1500 dummy text of the printing and typesetting industry.</p>
-      </v-card-text>
-      <v-card-actions class="justify-end mr-10 mb-2">
-        <router-link class="text-decoration-none text-black" to="/micaso">
-          <v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5">Ver Mensaje</v-btn>
-        </router-link>
-      </v-card-actions>
-    </v-card>
-
-    <v-card class="caso ma-5 rounded-lg">
-      <v-card-title >
-        <h3>Lorem Ipsum</h3>
-      </v-card-title>
-      <v-card-text>
-        <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500 dummy text of the printing and
-          typesetting industry. Lorem Ipsum has been the industry's standard dummy text eversince
-          the 1500 dummy text of the printing and typesetting industry.</p>
-      </v-card-text>
-      <v-card-actions class="justify-end mr-10 mb-2">
-        <router-link class="text-decoration-none text-black" to="/micaso">
-          <v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5">Ver Mensaje</v-btn>
-        </router-link>
-      </v-card-actions>
-    </v-card>
-
-    <v-card class="caso ma-5 rounded-lg">
-      <v-card-title >
-        <h3>Lorem Ipsum</h3>
-      </v-card-title>
-      <v-card-text>
-        <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500 dummy text of the printing and
-          typesetting industry. Lorem Ipsum has been the industry's standard dummy text eversince
-          the 1500 dummy text of the printing and typesetting industry.</p>
-      </v-card-text>
-      <v-card-actions class="justify-end mr-10 mb-2">
-        <router-link class="text-decoration-none text-black" to="/micaso">
-          <v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5">Ver Mensaje</v-btn>
-        </router-link>
-      </v-card-actions>
-    </v-card>
-
-    <v-card class="caso ma-5 rounded-lg">
-      <v-card-title >
-        <h3>Lorem Ipsum</h3>
-      </v-card-title>
-      <v-card-text>
-        <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500 dummy text of the printing and
-          typesetting industry. Lorem Ipsum has been the industry's standard dummy text eversince
-          the 1500 dummy text of the printing and typesetting industry.</p>
-      </v-card-text>
-      <v-card-actions class="justify-end mr-10 mb-2">
-        <router-link class="text-decoration-none text-black" to="/micaso">
-          <v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5">Ver Mensaje</v-btn>
-        </router-link>
-      </v-card-actions>
-    </v-card>
-
-    <v-card class="caso ma-5 rounded-lg">
-      <v-card-title >
-        <h3>Lorem Ipsum</h3>
-      </v-card-title>
-      <v-card-text>
-        <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500 dummy text of the printing and
-          typesetting industry. Lorem Ipsum has been the industry's standard dummy text eversince
-          the 1500 dummy text of the printing and typesetting industry.</p>
-      </v-card-text>
-      <v-card-actions class="justify-end mr-10 mb-2">
-        <router-link class="text-decoration-none text-black" to="/micaso">
-          <v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5">Ver Mensaje</v-btn>
-        </router-link>
-      </v-card-actions>
-    </v-card>
+    <div>
+      <v-card
+        v-for="(oneNotification, index) in notifications"
+        :key="index"
+        class="caso ma-5 rounded-lg"
+      >
+        <v-card-title>
+          <h3>
+            {{ oneNotification.title
+            }}<span class="text-green-lighten-1">{{
+              oneNotification.condition
+            }}</span>
+          </h3>
+        </v-card-title>
+        <v-card-text>
+          <p>
+            {{ oneNotification.description }}
+          </p>
+        </v-card-text>
+        <v-card-actions class="justify-end mr-10 mb-2">
+          <router-link
+            class="text-decoration-none text-black"
+            :to="`/micaso/${oneNotification.caseId}`"
+            ><v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5"
+              >Ver Mensaje</v-btn
+            ></router-link
+          >
+        </v-card-actions>
+      </v-card>
+    </div>
   </div>
 </template>
 
 <script>
+import { NotificationsApiService } from "../services/notifications-api.service";
+
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "notifications",
-}
+  data() {
+    return {
+      notifications: [],
+      notificationsService: null,
+    };
+  },
+  created() {
+    this.notificationsService = new NotificationsApiService();
+    this.notificationsService.getAllNotifications().then((response) => {
+      this.notifications = response.data;
+    });
+  },
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
