@@ -26,7 +26,7 @@
             class="text-decoration-none text-black"
             :to="`/micaso/${oneNotification.caseId}`"
             ><v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5"
-              >Ver Mensaje</v-btn
+              >View Message</v-btn
             ></router-link
           >
         </v-card-actions>

@@ -1,5 +1,5 @@
 <template>
-  <h3 class="pa-10">Busqueda de Abogado</h3>
+  <h3 class="pa-10">Lawyer Search</h3>
   <v-card
     v-for="index in lawyers"
     class="ma-5 ml-10 rounded-sm elevation-5 mx-auto d-flex justify-center"

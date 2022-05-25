@@ -109,6 +109,14 @@
       "name": "Djalma Dioses",
       "description": "",
       "id": 5
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "url": "/",
+      "name": "admin admin",
+      "description": "",
+      "id": 6
     }
   ],
   "plans": [

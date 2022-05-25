@@ -8,7 +8,7 @@
       <v-container>
         <v-card class="caso ma-5 rounded-lg">
           <v-card-title >
-            <h5 class="bio">Biografia</h5>
+            <h5 class="bio">Biography</h5>
           </v-card-title>
           <v-card-text>
             <p>
@@ -22,21 +22,21 @@
 
     <v-container class="d-flex justify-center">
       <v-card class="caso ma-5 rounded-lg w-25">
-        <v-card-title class="justify-center">Casos Ganados</v-card-title>
+        <v-card-title class="justify-center">Won Cases</v-card-title>
         <v-container class="justify-center d-flex">
           <v-progress-circular  :value="100" bg-color="green-lighten-1" :size="250" :width="15"><h3>90%</h3></v-progress-circular>
         </v-container>
       </v-card>
 
       <v-card class="caso ma-5 rounded-lg w-25">
-        <v-card-title class="justify-center">Casos Atendidos</v-card-title>
+        <v-card-title class="justify-center">Cases Handled</v-card-title>
         <v-container class="justify-center d-flex">
           <v-progress-circular class="justify-center" :value="100" bg-color="orange-lighten-1" :size="250" :width="15"><h3>425</h3></v-progress-circular>
         </v-container>
       </v-card>
     </v-container>
     <v-card-actions class="justify-end mr-10 mb-2">
-      <v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5">Contratar</v-btn>
+      <v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5">Hire</v-btn>
     </v-card-actions>
   </div>
 
