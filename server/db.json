@@ -101,6 +101,14 @@
       "name": "Djalma Dioses",
       "description": "",
       "id": 4
+    },
+    {
+      "email": "d1@d.com",
+      "password": "123",
+      "url": "/",
+      "name": "Djalma Dioses",
+      "description": "",
+      "id": 5
     }
   ],
   "plans": [

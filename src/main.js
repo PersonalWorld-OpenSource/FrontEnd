@@ -11,7 +11,7 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    component: () => import("./views/main.vue"),
+    component: () => import("./views/main-home.vue"),
   },
   {
     path: "/miscasos",
@@ -62,11 +62,6 @@ const routes = [
     path: "/lista-abogados",
     name: "Lista Abogados",
     component: () => import("./views/searched-lawyer.vue"),
-  },
-  {
-    path: "/home-all",
-    name: "Home-All",
-    component: () => import("./views/home-all.vue"),
   },
   {
     path: '/register',

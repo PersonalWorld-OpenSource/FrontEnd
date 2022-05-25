@@ -45,6 +45,9 @@ export default {
     };
   },
   created() {
+    if(!this.$store.getters.inLogin) {
+      window.location.href = '/'
+    }
     this.casesService = new CasesApiService();
     this.casesService.getAllCases().then((response) => {
       this.cases = response.data;

@@ -19,7 +19,11 @@
 
 export default {
   name: "pay-subscription",
-
+  created() {
+    if(!this.$store.getters.inLogin) {
+      window.location.href = '/'
+    }
+  },
   methods:{
     successful(){
       alert("Pago exitoso");

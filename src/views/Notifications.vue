@@ -48,6 +48,9 @@ export default {
     };
   },
   created() {
+    if(!this.$store.getters.inLogin) {
+      window.location.href = '/'
+    }
     this.notificationsService = new NotificationsApiService();
     this.notificationsService.getAllNotifications().then((response) => {
       this.notifications = response.data;

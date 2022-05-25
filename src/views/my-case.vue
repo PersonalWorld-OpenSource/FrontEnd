@@ -54,6 +54,9 @@ export default {
     }
   },
   created() {
+    if(!this.$store.getters.inLogin) {
+      window.location.href = '/'
+    }
     this.caseService = new CasesApiService();
     this.caseService.getByIndex(this.$route.params.id).then(
         response => {
