@@ -53,18 +53,24 @@
     {
       "id": 1,
       "name": "Fernando de la Cruz",
+      "age": "35",
+      "specialty": "Lorem, Lorem, Lorem, Lorem",
       "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
       "url": "https://www.eluniverso.com/resizer/6Y5-Yp0duJMj_QK-VCF5i9OtB4o=/581x670/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/PSILFSR3JRFWNMJJGP6TYRIUZQ.jpg"
     },
     {
       "id": 2,
       "name": "Aldair Huaman",
+      "age": "42",
+      "specialty": "Lorem, Lorem, Lorem, Lorem",
       "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
       "url": "https://blog.uvirtual.org/hubfs/Marketing%20-%20Recursos/Blog/Fotos%20Blog/Empatia-abogado-derecho-3.jpg"
     },
     {
       "id": 3,
       "name": "Diego Dioses",
+      "age": "40",
+      "specialty": "Lorem, Lorem, Lorem, Lorem",
       "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
       "url": "https://img.lalr.co/cms/2017/10/06191633/abogado.jpg?size=xl"
     }
