@@ -1,6 +1,6 @@
 <template>
   <div class="d-flex flex-column ma-auto mt-7">
-    <h2 class="text-center">Notificaciones</h2>
+    <h2 class="text-center">Notifications</h2>
 
     <div>
       <v-card

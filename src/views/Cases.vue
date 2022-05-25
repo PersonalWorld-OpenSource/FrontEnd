@@ -1,6 +1,6 @@
 <template>
   <div class="d-flex flex-column ma-auto mt-7">
-    <h2 class="text-center">Mis Casos</h2>
+    <h2 class="text-center">My Consults</h2>
     <div>
       <v-card
         v-for="(oneCase, index) in cases"

@@ -2,14 +2,14 @@
   <div class="hm-text">
     <div class="overlay d-flex align-lg-center justify-center">
       <h2 class="text-center text-white text-lg-h2 font-weight-bold">
-        Encuentra tu abogado ideal
+        Find your Ideal Lawyer
       </h2>
     </div>
   </div>
   <div class="bg-grey-lighten-3 lawyers pb-lg-16 pt-lg-16">
     <div class="pb-lg-2">
       <h3 class="text-center text-black text-sm-h4 font-weight-bold">
-        Abogados Verificados
+        Verified Lawyers
       </h3>
     </div>
     <v-container class="d-flex justify-center pa-xxl-16">
