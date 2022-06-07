@@ -23,7 +23,7 @@
             class="text-decoration-none text-black"
             :to="`/micaso/${oneCase.id}`"
             ><v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5"
-              >Ver caso</v-btn
+              >View Consult</v-btn
             ></router-link
           >
         </v-card-actions>
@@ -45,6 +45,9 @@ export default {
     };
   },
   created() {
+    if(!this.$store.getters.inLogin) {
+      window.location.href = '/'
+    }
     this.casesService = new CasesApiService();
     this.casesService.getAllCases().then((response) => {
       this.cases = response.data;

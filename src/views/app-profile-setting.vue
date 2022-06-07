@@ -62,13 +62,14 @@
 </template>
 
 <script>
-import { ProfilesApiService } from "../services/profile-api.service";
+
+import {UserApiService} from "../services/user-api.service";
 
 export default {
   name: "App-profile-setting",
   data() {
     return {
-      profileService: new ProfilesApiService(),
+      profileService: new UserApiService(),
       valid: true,
       itemData: {},
       id: "",
@@ -78,24 +79,27 @@ export default {
     };
   },
   created() {
+    if(!this.$store.getters.inLogin) {
+      window.location.href = '/'
+    }
     this.refreshList();
   },
   methods: {
     refreshList() {
-      this.profileService.getById(1).then((response) => {
-        this.id = response.data.id;
-        this.name = response.data.name;
-        this.description = response.data.description;
-        this.url = response.data.url;
-      });
+      this.id =this.$store.getters.getUser.id
+      this.name = this.$store.getters.getUser.name
+      this.description = this.$store.getters.getUser.description
+      this.url = this.$store.getters.getUser.url
     },
     updateData() {
       this.itemData = {
         name: this.name,
         url: this.url,
         description: this.description,
+        email: this.$store.getters.getUser.email,
+        password: this.$store.getters.getUser.password
       };
-      this.profileService.update(this.id, this.itemData);
+      this.profileService.update(this.id, this.itemData)
     },
   },
 };

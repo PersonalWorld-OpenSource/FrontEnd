@@ -1,8 +1,8 @@
 import http from "../core/services/http";
 
 export class CasesApiService {
-  getAllCases() {
-    return http.get("/cases")
+  getAllCases(type, id) {
+    return http.get(`/cases?${type}=${id}`)
   }
   getByIndex(id){
     return http.get(`/cases/${id}`);

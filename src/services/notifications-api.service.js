@@ -1,8 +1,8 @@
 import http from "../core/services/http";
 
 export class NotificationsApiService {
-    getAllNotifications() {
-        return http.get("/Notifications")
+    getAllNotifications(id) {
+        return http.get(`/Notifications?personId=${id}`)
     }
     getByIndex(id){
         return http.get(`/Notifications/${id}`);

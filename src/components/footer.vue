@@ -9,7 +9,7 @@
         </v-btn>
       </v-card-title>
       <v-card-text class="py-2 white--text text-center">
-        <p>Todos los Derechos Reservados </p>{{ new Date().getFullYear() }} — <strong>PersonalWorld</strong>
+        <p>All rights reserved</p>{{ new Date().getFullYear() }} — <strong>PersonalWorld</strong>
       </v-card-text>
     </v-card>
   </v-footer>

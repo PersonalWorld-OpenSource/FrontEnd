@@ -49,6 +49,7 @@
             variant="outlined"
             density="compact"
             label="Password"
+            type="password"
             v-model="password"
             class="mr-3"
         ></v-text-field>
@@ -57,6 +58,7 @@
             variant="outlined"
             density="compact"
             label="Confirm password"
+            type="password"
             v-model="confirmPassword"
             class="ml-3"
         ></v-text-field>

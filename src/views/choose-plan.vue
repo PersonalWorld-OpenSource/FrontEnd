@@ -28,6 +28,9 @@ export default {
     };
   },
   created(){
+    if(!this.$store.getters.inLogin) {
+      window.location.href = '/'
+    }
     this.plansService=new PlansApiService();
     this.plansService.getAllPlans().then((response) =>{
       this.plans = response.data;
