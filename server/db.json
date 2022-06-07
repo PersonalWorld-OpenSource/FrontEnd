@@ -5,118 +5,112 @@
       "title": "Tutela",
       "condition": "[ABIERTO]",
       "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text eversince the 1500 dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
-      "caseDescriptions": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC."
+      "caseDescriptions": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC.",
+      "client": 1,
+      "lawyer": 2
     },
     {
       "id": 2,
-      "title": "Divorcio",
-      "condition": "[CERRADO]",
-      "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text eversince the 1500 dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
-      "caseDescriptions": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC."
-    },
-    {
-      "id": 3,
-      "title": "Liquidacion de Herencia",
+      "title": "Tutela",
       "condition": "[ABIERTO]",
       "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text eversince the 1500 dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
-      "caseDescriptions": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC."
+      "caseDescriptions": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC.",
+      "client": 2,
+      "lawyer": 2
     }
   ],
   "notifications": [
     {
       "id": 1,
-      "title": "Liquidacion de Herencia",
-      "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text eversince the 1500 dummy text of the printing and typesetting industry."
-    },
-    {
-      "id": 2,
+      "casesId": 1,
+      "personId": 1,
       "title": "Tutela",
-      "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text eversince the 1500 dummy text of the printing and typesetting industry."
+      "description": "Ha enviado un mensajase"
     },
     {
-      "id": 3,
-      "title": "Liquidacion de Herencia",
-      "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text eversince the 1500 dummy text of the printing and typesetting industry."
+      "casesId": 1,
+      "personId": 2,
+      "title": "Tutela",
+      "description": "Has recibido un nuevo mensaje en este caso!",
+      "id": 2
     },
     {
-      "id": 4,
-      "title": "Divorcio",
-      "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text eversince the 1500 dummy text of the printing and typesetting industry."
+      "casesId": 1,
+      "personId": 2,
+      "title": "Tutela",
+      "description": "Has recibido un nuevo mensaje en este caso!",
+      "id": 3
     },
     {
-      "id": 5,
-      "title": "Divorcio",
-      "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text eversince the 1500 dummy text of the printing and typesetting industry."
-    }
-  ],
-  "lawyers": [
-    {
-      "id": 1,
-      "name": "Fernando de la Cruz",
-      "age": "35",
-      "specialty": "Lorem, Lorem, Lorem, Lorem",
-      "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
-      "url": "https://www.eluniverso.com/resizer/6Y5-Yp0duJMj_QK-VCF5i9OtB4o=/581x670/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/PSILFSR3JRFWNMJJGP6TYRIUZQ.jpg"
+      "casesId": 1,
+      "personId": 2,
+      "title": "Tutela",
+      "description": "Has recibido un nuevo mensaje en este caso!",
+      "id": 4
     },
     {
-      "id": 2,
-      "name": "Aldair Huaman",
-      "age": "42",
-      "specialty": "Lorem, Lorem, Lorem, Lorem",
-      "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
-      "url": "https://blog.uvirtual.org/hubfs/Marketing%20-%20Recursos/Blog/Fotos%20Blog/Empatia-abogado-derecho-3.jpg"
-    },
-    {
-      "id": 3,
-      "name": "Diego Dioses",
-      "age": "40",
-      "specialty": "Lorem, Lorem, Lorem, Lorem",
-      "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
-      "url": "https://img.lalr.co/cms/2017/10/06191633/abogado.jpg?size=xl"
+      "casesId": 1,
+      "personId": 1,
+      "title": "Tutela",
+      "description": "Has recibido un nuevo mensaje en este caso!",
+      "id": 5
     }
   ],
   "profile": [
     {
-      "name": "Eduardo Lozano",
-      "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32 en-Sydney College in Virginia",
-      "id": 1,
-      "url": "https://i.ibb.co/NrxPNH6/profile-Picture.png"
-    },
-    {
-      "id": 2,
-      "name": "Sofia Gomez Perez",
-      "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32 en-Sydney College in Virginia",
-      "url": "https://i.ibb.co/680wmbt/Sofia.jpg"
-    },
-    {
-      "id": 3,
-      "name": "Juan Garcia Morales",
-      "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32 en-Sydney College in Virginia",
-      "url": "https://i.ibb.co/XJMrZJJ/Juan.jpg"
-    },
-    {
-      "email": "dddd@ddd.com",
-      "password": "123",
+      "email": "dioses1302@gmail.com",
+      "password": "djalma",
       "url": "/",
       "name": "Djalma Dioses",
+      "type": "client",
       "description": "",
-      "id": 4
+      "speciality": "",
+      "won_cases": "",
+      "total_cases": "",
+      "lost_cases": "",
+      "id": 1
     },
     {
-      "email": "d1@d.com",
-      "password": "123",
-      "url": "/",
-      "name": "Djalma Dioses",
-      "description": "",
-      "id": 5
+      "email": "PEPE",
+      "password": "pepe",
+      "name": "Diego Dioses",
+      "age": "40",
+      "type": "lawyer",
+      "specialty": "Lorem, Lorem, Lorem, Lorem",
+      "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
+      "url": "https://img.lalr.co/cms/2017/10/06191633/abogado.jpg?size=xl",
+      "won_cases": "",
+      "total_cases": "",
+      "lost_cases": "",
+      "id": 2
     },
     {
-      "email": "admin@gmail.com",
-      "password": "admin",
-      "url": "/",
-      "name": "admin admin",
-      "description": "",
-      "id": 6
+      "email": "PEPE",
+      "password": "pepe",
+      "name": "Diego Go",
+      "age": "40",
+      "type": "lawyer",
+      "specialty": "Lorem, Lorem, Lorem, Lorem",
+      "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
+      "url": "https://img.lalr.co/cms/2017/10/06191633/abogado.jpg?size=xl",
+      "won_cases": "",
+      "total_cases": "",
+      "lost_cases": "",
+      "id": 2
+    },
+    {
+      "email": "PEPE",
+      "password": "pepe",
+      "name": "Diego Go",
+      "age": "40",
+      "type": "lawyer",
+      "specialty": "Lorem, Lorem, Lorem, Lorem",
+      "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500 dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
+      "url": "https://img.lalr.co/cms/2017/10/06191633/abogado.jpg?size=xl",
+      "won_cases": "",
+      "total_cases": "",
+      "lost_cases": "",
+      "id": 2
     }
   ],
   "plans": [
