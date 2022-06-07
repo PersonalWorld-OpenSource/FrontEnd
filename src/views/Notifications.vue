@@ -18,7 +18,7 @@
         </v-card-title>
         <v-card-text>
           <p>
-            {{ oneNotification.caseDescription }}
+            {{ oneNotification.description }}
           </p>
         </v-card-text>
         <v-card-actions class="justify-end mr-10 mb-2">
