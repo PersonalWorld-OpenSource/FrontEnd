@@ -2,19 +2,19 @@ import http from "../core/services/http";
 
 export class LawyersApiService {
   getAllLawyers() {
-    return http.get("/Lawyers")
+    return http.get("/profile?type=lawyer")
   }
   getByIndex(id){
-    return http.get(`/Lawyers/${id}`);
+    return http.get(`/profile/${id}`);
   }
   create(data) {
-    return http.post("/Lawyers",data);
+    return http.post("/profile",data);
   }
   update(id, data) {
-    return http.put(`/Lawyers/${id}`,data);
+    return http.put(`/profile/${id}`,data);
   }
   delete(id) {
-    return http.delete(`/Lawyers/${id}`);
+    return http.delete(`/profile/${id}`);
   }
 
 }
