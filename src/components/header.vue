@@ -3,7 +3,7 @@
     <v-app-bar-nav-icon @click="barra = !barra"></v-app-bar-nav-icon>
     <router-link class="text-decoration-none text-white" to="/"><v-toolbar-title>PersonalWorld</v-toolbar-title></router-link>
     <v-spacer></v-spacer>
-    <router-link class="text-decoration-none text-white" to="/perfil"><v-btn>Profile</v-btn></router-link>
+    <router-link class="text-decoration-none text-white" to="/profile"><v-btn>Profile</v-btn></router-link>
   </v-toolbar>
 
   <v-toolbar  v-else app class="bg-indigo-darken-3">
@@ -17,19 +17,19 @@
     <v-list temporary class="d-flex justify-center items pa-0 bg-indigo-darken-3">
       <v-list-item-group v-model="barra_grupo" class="bg-indigo-darken-3 pt-16">
         <v-list-item>
-          <v-list-item-title><router-link class="text-decoration-none text-white" to="/notificaciones" @click=" barra  = !barra"><v-btn class="bg-indigo-darken-3">Notifications</v-btn></router-link></v-list-item-title>
+          <v-list-item-title><router-link class="text-decoration-none text-white" to="/notifications" @click=" barra  = !barra"><v-btn class="bg-indigo-darken-3">Notifications</v-btn></router-link></v-list-item-title>
         </v-list-item>
 
         <v-list-item>
-          <v-list-item-title><router-link class="text-decoration-none text-white" to="/encontrar-abogado" @click=" barra  = !barra"><v-btn class="bg-indigo-darken-3">Find Lawyer</v-btn></router-link></v-list-item-title>
+          <v-list-item-title><router-link class="text-decoration-none text-white" to="/find-lawyer" @click=" barra  = !barra"><v-btn class="bg-indigo-darken-3">Find Lawyer</v-btn></router-link></v-list-item-title>
         </v-list-item>
 
         <v-list-item>
-          <v-list-item-title><router-link class="text-decoration-none text-white" to="/subscripcion" @click=" barra  = !barra"><v-btn class="bg-transparent">Subscription</v-btn></router-link></v-list-item-title>
+          <v-list-item-title><router-link class="text-decoration-none text-white" to="/subscription" @click=" barra  = !barra"><v-btn class="bg-transparent">Subscription</v-btn></router-link></v-list-item-title>
         </v-list-item>
 
         <v-list-item>
-          <v-list-item-title><router-link class="text-decoration-none text-white" to="/miscasos" @click=" barra  = !barra"><v-btn class="bg-indigo-darken-3">My Consults</v-btn></router-link></v-list-item-title>
+          <v-list-item-title><router-link class="text-decoration-none text-white" to="/myconsults" @click=" barra  = !barra"><v-btn class="bg-indigo-darken-3">My Consults</v-btn></router-link></v-list-item-title>
         </v-list-item >
 
         <v-list-item>

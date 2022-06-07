@@ -15,13 +15,13 @@
         </v-card-title>
         <v-card-text>
           <p>
-            {{ oneCase.description }}
+            {{ oneCase.caseDescription }}
           </p>
         </v-card-text>
         <v-card-actions class="justify-end mr-10 mb-2">
           <router-link
             class="text-decoration-none text-black"
-            :to="`/micaso/${oneCase.id}`"
+            :to="`/consult/${oneCase.id}`"
             ><v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5"
               >View Consult</v-btn
             ></router-link
@@ -49,7 +49,7 @@ export default {
       window.location.href = '/'
     }
     this.casesService = new CasesApiService();
-    this.casesService.getAllCases().then((response) => {
+    this.casesService.getAllCases(this.$store.getters.getUser.type, this.$store.getters.getUser.id).then((response) => {
       this.cases = response.data;
     });
   },

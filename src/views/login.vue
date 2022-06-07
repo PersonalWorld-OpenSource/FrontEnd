@@ -1,9 +1,10 @@
 <template>
-  <v-card className="mx-auto mt-5 py-2" width="400">
-    <v-container className="mb-4">
-      <h2 className="text-center mt-3">Log In</h2>
+
+  <v-card class="mx-auto  pd" width="500">
+    <v-container class="mb-4">
+      <h2 class="text-center mt-3">Login</h2>
     </v-container>
-    <v-form className="px-3 ml-10 mr-10">
+    <v-form class="px-3 ml-15 mr-15">
       <v-text-field
           color="blue-darken-3"
           variant="outlined"
@@ -21,23 +22,16 @@
           type="password"
           v-model="password"
       ></v-text-field>
-      <v-btn
-          variant="text"
-          className="v-card-text text-blue-darken-3 mt-n14 ml-n4"
-          density="comfortable"
-      >Forgot password?
-      </v-btn
-      >
-      <v-container className="d-flex justify-center mb-5">
+      <v-container class="d-flex justify-center mb-5">
         <v-row>
-          <v-btn
-              density="comfortable"
-              variant="text"
-              className="text-blue-darken-3 ml-n5"
-          >Create account
-          </v-btn
-          >
-          <v-btn density="comfortable" color="#1C58AE" className="text-white pa-md-4 ml-14" @click="pressLogin">
+          <router-link to="/register">
+            <v-btn
+                density="comfortable"
+                variant="text"
+                class="text-blue-darken-3 ml-n3 "
+            >Register instead</v-btn
+            ></router-link>
+          <v-btn density="comfortable" color="#1C58AE" class="text-white ml-16 pd-s" @click="pressLogin">
             Login
           </v-btn>
         </v-row>
@@ -78,6 +72,8 @@ export default {
 
               this.$store.state.changeInLogin = !this.$store.getters.inLogin
               this.$store.dispatch('changeLogin')
+
+
               window.location.href = '/'
             }
           }
@@ -88,4 +84,12 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.pd {
+  margin: 13rem 0;
+  padding: 2rem 0;
+}
+.pd-s {
+  padding: 1rem !important;
+}
+</style>

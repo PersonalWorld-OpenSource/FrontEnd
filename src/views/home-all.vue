@@ -8,7 +8,7 @@
   </div>
   <div class="bg-grey-lighten-3 lawyers pb-lg-16 pt-lg-16">
     <div class="pb-lg-2">
-      <h3 class="text-center text-black text-sm-h4 font-weight-bold">
+      <h3 class="text-center text-black  font-bold text-L">
         Verified Lawyers
       </h3>
     </div>
@@ -22,13 +22,13 @@
           <img
             :src="`${oneLawyer.url}`"
             alt="Img Lawyer"
-            class="img-lawyer pr-2"
+            class="img-lawyer mr-2"
           />
         </div>
         <div>
-          <h4 class="text-m font-weight-bold">{{ oneLawyer.name }}</h4>
-          <p class="text-s font-weight-bold">{{ oneLawyer.age }}</p>
-          <p class="text-s font-weight-bold">{{ oneLawyer.specialty }}</p>
+          <h4 class="text-m font-weight-bold font-bold pb-5">{{ oneLawyer.name }}</h4>
+          <p class="text-s font-weight-bold font-semi">{{ oneLawyer.age }}</p>
+          <p class="text-s font-weight-bold font-normal">{{ oneLawyer.specialty }}</p>
         </div>
       </v-container>
     </v-container>
@@ -60,32 +60,37 @@ export default {
 
 <style scoped>
 .hm-text {
-  height: 45rem;
+  height: 30rem;
   background: url("/public/images/abogado.jpeg") no-repeat;
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
 }
 .overlay {
-  height: 45rem;
+  height: 30rem;
   background: linear-gradient(
     0deg,
-    rgba(20, 20, 20, 0.404) 100%,
-    rgba(96, 56, 19, 0.192) 100%
+    rgba(3, 3, 3, 0.404) 100%,
+    rgba(3, 3, 3, 0.192) 100%
   );
 }
 .text-m {
   font-size: 20px;
+  color: #545454;
 }
-.text-l {
-  font-size: 25px;
+
+.text-L {
+  font-size: 35px;
+  color: #545454;
 }
 .text-s {
   font-size: 15px;
+  color: #545454;
 }
 .img-lawyer {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  border-radius: .5rem;
+  border: 1px solid #bdbdbd !important;
 }
 .lawyers {
   padding-top: 5rem;
@@ -95,4 +100,5 @@ export default {
   width: 400px;
   border: 1px solid #bdbdbd !important;
 }
+
 </style>

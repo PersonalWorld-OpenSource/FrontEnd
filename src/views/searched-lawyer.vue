@@ -24,7 +24,7 @@
         </v-row>
       </div>
     </v-container>
-    <router-link class="text-decoration-none text-black" :to="`/miabogado/${index.id}`">
+    <router-link class="text-decoration-none text-black" :to="`/lawyer/${index.id}`">
       <v-btn
         class="mt-16 ma-10 ml-10 d-flex justify-end font-weight-black boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5"
       >
@@ -49,7 +49,7 @@ export default {
   },
 
   created() {
-    if(!this.$store.getters.inLogin) {
+    if((!this.$store.getters.inLogin) || (this.$store.getters.getUser.type !== 'client')) {
       window.location.href = '/'
     }
     this.lawyersService = new LawyersApiService();

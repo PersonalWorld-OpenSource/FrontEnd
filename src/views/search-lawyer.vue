@@ -66,7 +66,7 @@
       <v-container class="d-flex justify-center">
         <router-link
           class="text-decoration-none text-black"
-          to="/lista-abogados"
+          to="/lawyers"
         >
           <v-btn color="#1C58AE" class="text-white"> Search </v-btn>
         </router-link>
@@ -99,7 +99,7 @@ export default {
     };
   },
   created() {
-    if(!this.$store.getters.inLogin) {
+    if((!this.$store.getters.inLogin) || (this.$store.getters.getUser.type !== 'client')) {
       window.location.href = '/'
     }
   }

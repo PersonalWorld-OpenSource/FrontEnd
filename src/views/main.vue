@@ -19,13 +19,13 @@
             </v-card-title>
             <v-card-text>
               <p>
-                {{ oneCase.description }}
+                {{ oneCase.caseDescription }}
               </p>
             </v-card-text>
             <v-card-actions class="justify-end mr-10 mb-2">
               <router-link
                 class="text-decoration-none text-black"
-                :to="`/micaso/${oneCase.id}`"
+                :to="`/consult/${oneCase.id}`"
                 ><v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5"
                   >See Consult</v-btn
                 ></router-link
@@ -36,7 +36,7 @@
       </div>
 
       <div class="w-50 ml-lg-10">
-        <h2 class="text-center">My lawyer</h2>
+        <h2 class="text-center">My Last Lawyer</h2>
         <v-img
           src="/../public/images/abogado.png"
           max-height="400"
@@ -45,7 +45,7 @@
           position="center"
         ></v-img>
         <v-container class="w-100 d-flex justify-center">
-          <router-link class="text-decoration-none text-black" to="/miabogado"
+          <router-link class="text-decoration-none text-black" to="/lawyer/2"
             ><v-btn
               class="boton-caso pgb-white rounded-0 pl-7 pr-7 pt-5 pb-5 justify-center"
               >Profile</v-btn
@@ -96,8 +96,8 @@ export default {
     this.notificationsService = new NotificationsApiService();
     axios
       .all([
-        this.casesService.getAllCases(),
-        this.notificationsService.getAllNotifications(),
+        this.casesService.getAllCases(this.$store.getters.getUser.type, this.$store.getters.getUser.id),
+        this.notificationsService.getAllNotifications(this.$store.getters.getUser.id),
       ])
       .then((responses) => {
         this.cases = responses[0].data;
