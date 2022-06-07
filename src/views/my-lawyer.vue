@@ -1,4 +1,34 @@
 <template>
+  <div v-show="enableNewConsult" class="encima" style="background: rgba(0, 0, 0, 0.5);;">
+    <div v class="p-8 bg-white vp-form">
+      <h3>Create</h3>
+
+      <div>
+        <v-text-field
+            color="blue-darken-3"
+            variant="outlined"
+            density="compact"
+            bg-color="white"
+            label="Title"
+            v-model="consult.description"
+        ></v-text-field>
+      </div>
+      <div>
+        <v-text-field
+            color="blue-darken-3"
+            variant="outlined"
+            density="compact"
+            bg-color="white"
+            label="Description"
+            v-model="consult.title"
+        ></v-text-field>
+      </div>
+      <v-btn density="comfortable" color="#1C58AE" class="text-white d-flex justify-center" @click="createConsult">
+        Create Consult
+      </v-btn>
+    </div>
+  </div>
+
   <div>
     <div class="d-flex justify-center mt-16">
       <v-container class="">
@@ -36,7 +66,7 @@
       </v-card>
     </v-container>
     <v-card-actions class="justify-end mr-10 mb-2">
-      <v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5">Hire</v-btn>
+      <v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5" @click="showConsult">New Consult</v-btn>
     </v-card-actions>
   </div>
 
@@ -45,13 +75,26 @@
 
 <script>
 import {LawyersApiService} from "../services/lawyers-api.service";
+import {CasesApiService} from "../services/cases-api.service";
 
 export default {
   name: "my-lawyer",
   data() {
     return {
       oneLawyer: [],
-      lawyerService: null
+      lawyerService: null,
+      enableNewConsult: false,
+      consultService : null,
+      consult: [
+        {
+          "title": "",
+          "condition": "",
+          "description": "",
+          "caseDescriptions": "",
+          "client": null,
+          "lawyer": null
+        }
+      ]
     }
   },
   created() {
@@ -63,6 +106,25 @@ export default {
         response => {
           this.oneLawyer = response.data
         })
+  },
+  methods: {
+    showConsult() {
+      this.enableNewConsult = !this.enableNewConsult;
+    },
+    createConsult() {
+      this.consultService = new CasesApiService();
+
+      this.consultService.create(
+          {
+            "title": this.consult.title,
+            "condition": "[OPEN]",
+            "caseDescription": this.consult.description,
+            "client": this.$store.getters.getUser.id,
+            "lawyer": this.oneLawyer.id
+          }
+      ).then(window.location.href = '/myconsults')
+
+    }
   }
 }
 </script>
@@ -70,5 +132,21 @@ export default {
 <style scoped>
 h3 {
   font-size: 100px !important;
+}
+.encima {
+  display: inline-block;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.vp-form {
+  border-radius: 10px;
+  border: 1px solid #7c7c;
+  padding: 2rem;
 }
 </style>

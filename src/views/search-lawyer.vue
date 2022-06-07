@@ -66,7 +66,7 @@
       <v-container class="d-flex justify-center">
         <router-link
           class="text-decoration-none text-black"
-          to="/lista-abogados"
+          to="/lawyers"
         >
           <v-btn color="#1C58AE" class="text-white"> Search </v-btn>
         </router-link>

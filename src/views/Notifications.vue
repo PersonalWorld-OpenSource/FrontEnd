@@ -18,13 +18,13 @@
         </v-card-title>
         <v-card-text>
           <p>
-            {{ oneNotification.description }}
+            {{ oneNotification.caseDescription }}
           </p>
         </v-card-text>
         <v-card-actions class="justify-end mr-10 mb-2">
           <router-link
             class="text-decoration-none text-black"
-            :to="`/micaso/${oneNotification.casesId}`"
+            :to="`/consult/${oneNotification.casesId}`"
             ><v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5"
               >View Message</v-btn
             ></router-link
