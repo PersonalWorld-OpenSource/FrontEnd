@@ -24,7 +24,7 @@
         <v-card-actions class="justify-end mr-10 mb-2">
           <router-link
             class="text-decoration-none text-black"
-            :to="`/micaso/${oneNotification.caseId}`"
+            :to="`/micaso/${oneNotification.casesId}`"
             ><v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5"
               >View Message</v-btn
             ></router-link
@@ -52,7 +52,7 @@ export default {
       window.location.href = '/'
     }
     this.notificationsService = new NotificationsApiService();
-    this.notificationsService.getAllNotifications().then((response) => {
+    this.notificationsService.getAllNotifications(this.$store.getters.getUser.id).then((response) => {
       this.notifications = response.data;
     });
   },

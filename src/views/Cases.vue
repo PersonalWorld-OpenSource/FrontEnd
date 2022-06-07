@@ -49,7 +49,7 @@ export default {
       window.location.href = '/'
     }
     this.casesService = new CasesApiService();
-    this.casesService.getAllCases().then((response) => {
+    this.casesService.getAllCases(this.$store.getters.getUser.type, this.$store.getters.getUser.id).then((response) => {
       this.cases = response.data;
     });
   },

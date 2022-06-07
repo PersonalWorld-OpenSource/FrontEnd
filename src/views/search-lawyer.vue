@@ -99,7 +99,7 @@ export default {
     };
   },
   created() {
-    if(!this.$store.getters.inLogin) {
+    if((!this.$store.getters.inLogin) || (this.$store.getters.getUser.type !== 'client')) {
       window.location.href = '/'
     }
   }

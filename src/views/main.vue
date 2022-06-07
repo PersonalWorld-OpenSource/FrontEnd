@@ -36,7 +36,7 @@
       </div>
 
       <div class="w-50 ml-lg-10">
-        <h2 class="text-center">My lawyer</h2>
+        <h2 class="text-center">My Last Lawyer</h2>
         <v-img
           src="/../public/images/abogado.png"
           max-height="400"
@@ -96,8 +96,8 @@ export default {
     this.notificationsService = new NotificationsApiService();
     axios
       .all([
-        this.casesService.getAllCases(),
-        this.notificationsService.getAllNotifications(),
+        this.casesService.getAllCases(this.$store.getters.getUser.type, this.$store.getters.getUser.id),
+        this.notificationsService.getAllNotifications(this.$store.getters.getUser.id),
       ])
       .then((responses) => {
         this.cases = responses[0].data;

@@ -20,7 +20,7 @@
 export default {
   name: "pay-subscription",
   created() {
-    if(!this.$store.getters.inLogin) {
+    if((!this.$store.getters.inLogin) || (this.$store.getters.getUser.type !== 'lawyer')) {
       window.location.href = '/'
     }
   },

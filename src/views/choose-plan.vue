@@ -28,9 +28,10 @@ export default {
     };
   },
   created(){
-    if(!this.$store.getters.inLogin) {
+    if((!this.$store.getters.inLogin) || (this.$store.getters.getUser.type !== 'lawyer')) {
       window.location.href = '/'
     }
+
     this.plansService=new PlansApiService();
     this.plansService.getAllPlans().then((response) =>{
       this.plans = response.data;

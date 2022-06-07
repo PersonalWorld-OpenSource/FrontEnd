@@ -31,8 +31,8 @@
           <h5 class="bio">Message</h5>
         </v-card-title>
         <v-container class="d-flex mt-custom ">
-          <v-textarea class="mr-5" bg-color="white" auto-grow shaped rows="1"></v-textarea>
-          <v-btn class="boton-caso rounded-0">Send Message</v-btn>
+          <v-textarea class="mr-5" bg-color="white" auto-grow shaped rows="1" v-model="message"></v-textarea>
+          <v-btn class="boton-caso rounded-0" @click="sendMessage">Send Message</v-btn>
         </v-container>
 
       </v-card>
@@ -44,13 +44,15 @@
 
 <script>
 import {CasesApiService} from "../services/cases-api.service";
+import {NotificationsApiService} from "../services/notifications-api.service";
 
 export default {
   name: "my-case",
   data() {
     return {
       oneCase: [],
-      caseService: null
+      caseService: null,
+      notificationService: null
     }
   },
   created() {
@@ -61,7 +63,38 @@ export default {
     this.caseService.getByIndex(this.$route.params.id).then(
         response => {
           this.oneCase = response.data
+          if(this.$store.getters.getUser.type == "lawyer"){
+            if(this.oneCase.lawyer != this.$store.getters.getUser.id)
+              window.location.href = '/'
+          } else {
+            if(this.oneCase.client != this.$store.getters.getUser.id)
+              window.location.href = '/'
+          }
+
         })
+  },
+  methods: {
+    sendMessage() {
+      this.notificationService = new NotificationsApiService();
+
+      if(this.$store.getters.getUser.type == "lawyer"){
+          this.notificationService.create({
+            "casesId": this.oneCase.id,
+            "personId": this.oneCase.client,
+            "title": this.oneCase.title,
+            "description": "Has recibido un nuevo mensaje en este caso!"
+          })
+      } else {
+          this.notificationService.create({
+            "casesId": this.oneCase.id,
+            "personId": this.oneCase.lawyer,
+            "title": this.oneCase.title,
+            "description": "Has recibido un nuevo mensaje en este caso!"
+          })
+      }
+
+
+    }
   }
 }
 </script>
