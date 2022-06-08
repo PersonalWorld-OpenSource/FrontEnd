@@ -1,0 +1,1 @@
+import{h as s}from"./http.241ae005.js";class c{getAllCases(e,t){return s.get(`/cases?${e}=${t}`)}getByIndex(e){return s.get(`/cases/${e}`)}create(e){return s.post("/cases",e)}update(e,t){return s.put(`/cases/${e}`,t)}delete(e){return s.delete(`/cases/${e}`)}}export{c as C};

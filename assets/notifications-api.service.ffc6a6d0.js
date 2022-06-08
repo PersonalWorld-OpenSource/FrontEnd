@@ -1,0 +1,1 @@
+import{h as i}from"./http.241ae005.js";class n{getAllNotifications(t){return i.get(`/Notifications?personId=${t}`)}getByIndex(t){return i.get(`/Notifications/${t}`)}create(t){return i.post("/Notifications",t)}update(t,e){return i.put(`/Notifications/${t}`,e)}delete(t){return i.delete(`/Notifications/${t}`)}}export{n as N};

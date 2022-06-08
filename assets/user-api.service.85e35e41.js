@@ -1,0 +1,1 @@
+import{h as r}from"./http.241ae005.js";class o{getAllUsers(){return r.get("/profile")}getByIndex(e){return r.get(`/profile/${e}`)}create(e){return r.post("/profile",e)}update(e,t){return r.put(`/profile/${e}`,t)}delete(e){return r.delete(`/profile/${e}`)}findAccount(e,t){return r.get(`/profile?email=${e}&password=${t}`)}}export{o as U};
