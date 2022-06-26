@@ -20,15 +20,14 @@
       >
         <div>
           <img
-            :src="`${oneLawyer.url}`"
+            :src="`${oneLawyer.urlImage}`"
             alt="Img Lawyer"
             class="img-lawyer mr-2"
           />
         </div>
         <div>
-          <h4 class="text-m font-weight-bold font-bold pb-5">{{ oneLawyer.name }}</h4>
-          <p class="text-s font-weight-bold font-semi">{{ oneLawyer.age }}</p>
-          <p class="text-s font-weight-bold font-normal">{{ oneLawyer.specialty }}</p>
+          <h4 class="text-m font-weight-bold font-bold pb-5">{{ oneLawyer.fisrtName }} {{oneLawyer.lastName}}</h4>
+          <p class="text-s font-weight-bold font-normal">{{ oneLawyer.description }}</p>
         </div>
       </v-container>
     </v-container>
@@ -97,7 +96,7 @@ export default {
 }
 .one-lawyer {
   background: white;
-  width: 400px;
+  width: 700px;
   border: 1px solid #bdbdbd !important;
 }
 

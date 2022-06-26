@@ -10,12 +10,12 @@
         <v-card-title>
           <h3>
             {{ oneCase.title
-            }}<span class="text-green-lighten-1">{{ oneCase.condition }}</span>
+            }}<span class="text-green-lighten-1">{{ oneCase.status }}</span>
           </h3>
         </v-card-title>
         <v-card-text>
           <p>
-            {{ oneCase.caseDescription }}
+            {{ oneCase.description }}
           </p>
         </v-card-text>
         <v-card-actions class="justify-end mr-10 mb-2">
@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import { CasesApiService } from "../services/cases-api.service";
+import { ConsultsApiService } from "../services/consults-api.service";
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
@@ -48,7 +48,7 @@ export default {
     if(!this.$store.getters.inLogin) {
       window.location.href = '/'
     }
-    this.casesService = new CasesApiService();
+    this.casesService = new ConsultsApiService();
     this.casesService.getAllCases(this.$store.getters.getUser.type, this.$store.getters.getUser.id).then((response) => {
       this.cases = response.data;
     });

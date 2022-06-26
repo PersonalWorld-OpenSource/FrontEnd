@@ -13,13 +13,13 @@
               <h3>
                 {{ oneCase.title
                 }}<span class="text-green-lighten-1">{{
-                  oneCase.condition
+                  oneCase.status
                 }}</span>
               </h3>
             </v-card-title>
             <v-card-text>
               <p>
-                {{ oneCase.caseDescription }}
+                {{ oneCase.description }}
               </p>
             </v-card-text>
             <v-card-actions class="justify-end mr-10 mb-2">
@@ -76,7 +76,7 @@
 </template>
 
 <script>
-import { CasesApiService } from "../services/cases-api.service";
+import { ConsultsApiService } from "../services/consults-api.service";
 import { NotificationsApiService } from "../services/notifications-api.service";
 import axios from "axios";
 
@@ -92,7 +92,7 @@ export default {
     };
   },
   created() {
-    this.casesService = new CasesApiService();
+    this.casesService = new ConsultsApiService();
     this.notificationsService = new NotificationsApiService();
     axios
       .all([

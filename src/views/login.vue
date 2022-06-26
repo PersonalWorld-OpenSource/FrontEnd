@@ -52,22 +52,26 @@ export default {
       password: null,
       isLogin: false,
       account: [],
-      accountService: null
+      userService: null,
     }
   },
   created() {
     if(this.$store.getters.inLogin) {
       window.location.href = '/'
     }
-    this.accountService = new UserApiService();
+    this.userService = new UserApiService();
   },
   methods: {
     pressLogin() {
-      this.accountService.findAccount(this.email,this.password).then(
+      this.userService.loginUser({
+        "email": this.email,
+        "password": this.password
+      }).then(
           response => {
             if(response.data.length != 0) {
+              console.log(response.data)
               this.account = response.data
-              this.$store.state.changeUser = response.data[0]
+              this.$store.state.changeUser = response.data
               this.$store.dispatch('changeUser')
 
               this.$store.state.changeInLogin = !this.$store.getters.inLogin

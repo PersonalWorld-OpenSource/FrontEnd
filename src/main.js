@@ -26,7 +26,7 @@ const routes = [
   {
     path: "/lawyer/:id",
     name: "Lawyer",
-    component: () => import("./views/my-lawyer.vue"),
+    component: () => import("./views/lawyer-profile.vue"),
   },
   {
     path: "/consult/:id",
@@ -34,9 +34,9 @@ const routes = [
     component: () => import("./views/my-case.vue"),
   },
   {
-    path: "/profile",
+    path: "/user/:id",
     name: "My Profile",
-    component: () => import("./views/app-profile.vue"),
+    component: () => import("./views/user-profile.vue"),
   },
   {
     path: "/edit-profile",
@@ -49,7 +49,7 @@ const routes = [
     component: () => import("./views/choose-plan.vue"),
   },
   {
-    path: "/buy",
+    path: "/buy/:id",
     name: "Buy",
     component: () => import("./views/pay-subscription.vue"),
   },

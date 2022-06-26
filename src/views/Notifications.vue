@@ -24,9 +24,9 @@
         <v-card-actions class="justify-end mr-10 mb-2">
           <router-link
             class="text-decoration-none text-black"
-            :to="`/consult/${oneNotification.casesId}`"
+            :to="`/consult/${oneNotification.consult.id}`"
             ><v-btn class="boton-caso rounded-0 pl-7 pr-7 pt-5 pb-5"
-              >View Message</v-btn
+              @click="removeNotification(oneNotification.id)">View Message</v-btn
             ></router-link
           >
         </v-card-actions>
@@ -56,6 +56,11 @@ export default {
       this.notifications = response.data;
     });
   },
+  methods: {
+    removeNotification(id){
+      this.notificationsService.delete(id)
+    }
+  }
 };
 </script>
 
