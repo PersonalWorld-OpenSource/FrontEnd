@@ -5,15 +5,15 @@
     class="ma-5 ml-10 rounded-sm elevation-5 mx-auto d-flex justify-center"
     width="1100"
   >
-    <v-container class="d-flex">
+    <v-container class="d-flex align-lg-center">
       <v-img
-        :src="index.url"
-        width="188"
-        height="157"
+          :src="index.urlImage"
+          max-width="188"
+          max-height="157"
       ></v-img>
       <div class="ml-lg-5">
         <v-card-title>
-          {{ index.name }}
+          {{ index.fisrtName }} {{ index.lastName }}
         </v-card-title>
         <v-row>
           <v-row class="ml-lg-3">

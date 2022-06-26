@@ -1,23 +1,23 @@
 import http from "../core/services/http";
 
 export class UserApiService {
+    loginUser(data){
+        return http.post("/auth/sign-in",data);
+    }
+    registerUser(data){
+        return http.post("/auth/sign-up",data);
+    }
     getAllUsers() {
-        return http.get("/profile")
+        return http.get("/api/v1/person")
     }
     getByIndex(id){
-        return http.get(`/profile/${id}`);
-    }
-    create(data) {
-        return http.post("/profile",data);
+        return http.get(`/api/v1/person/${id}`);
     }
     update(id, data) {
-        return http.put(`/profile/${id}`,data);
+        return http.put(`/api/v1/person/${id}`,data);
     }
     delete(id) {
-        return http.delete(`/profile/${id}`);
-    }
-    findAccount(email,password){
-        return http.get(`/profile?email=${email}&password=${password}`)
+        return http.delete(`/api/v1/person/${id}`);
     }
 
 }

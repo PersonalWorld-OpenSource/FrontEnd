@@ -83,6 +83,7 @@
 
 <script>
 import {UserApiService} from "../services/user-api.service";
+import {LawyersApiService} from "../services/lawyers-api.service";
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
@@ -97,7 +98,8 @@ export default {
       email: "",
       password: "",
       confirmPassword: "",
-      profileService: null
+      userService: null,
+      lawyerService: null
     };
   },
   created() {
@@ -113,41 +115,45 @@ export default {
         if(this.type == "client") {
           if(this.name != "" || this.last != "" || this.email != "" || this.password != "" || this.confirmPassword != "" ){
 
-            this.profileService = new UserApiService()
-            this.profileService.create({
+            this.userService = new UserApiService()
+            this.userService.registerUser({
+              "fisrtName": this.name,
+              "lastName": this.last,
               "email": this.email,
               "password": this.password,
-              "url": "/",
-              "name": this.name+" "+this.last,
-              "type": this.type,
-              "description": "",
-              "speciality": "",
-              "won_cases": "",
-              "total_cases": "",
-              "lost_cases": "",
+              "description": "-",
+              "urlImage": "/",
+              "type": "client"
             }).then(response => {
+              console.log(response.data)
               if(response.data.length != 0) {
                 window.location.href = '/login'
+              } else {
+                alert("Error al Registrarse")
               }
             })
           }
         } else {
           if(this.name != "" || this.last != "" || this.email != "" || this.password != "" || this.confirmPassword != "" ){
 
-            this.profileService = new UserApiService()
-            this.profileService.create({
+            this.lawyerService = new LawyersApiService()
+            this.lawyerService.registerLawyer({
+              "fisrtName": this.name,
+              "lastName": this.last,
               "email": this.email,
               "password": this.password,
-              "url": "/",
-              "name": this.name+" "+this.last,
-              "type": this.type,
-              "description": "",
-              "won_cases": "",
-              "total_cases": "",
-              "lost_cases": "",
+              "description": "-",
+              "urlImage": "/",
+              "type": "lawyer",
+              "specialty": "string",
+              "wonCases": 0,
+              "totalCases": 0,
+              "lostCases": 0
             }).then(response => {
               if(response.data.length != 0) {
                 window.location.href = '/login'
+              } else {
+                alert("Error al registrarse")
               }
             })
           }
