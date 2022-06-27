@@ -36,22 +36,6 @@
       </div>
 
       <div class="w-50 ml-lg-10">
-        <h2 class="text-center">My Last Lawyer</h2>
-        <v-img
-          src="/../public/images/abogado.png"
-          max-height="400"
-          max-width="400"
-          class="rounded ma-auto mt-5"
-          position="center"
-        ></v-img>
-        <v-container class="w-100 d-flex justify-center">
-          <router-link class="text-decoration-none text-black" to="/lawyer/2"
-            ><v-btn
-              class="boton-caso pgb-white rounded-0 pl-7 pr-7 pt-5 pb-5 justify-center"
-              >Profile</v-btn
-            ></router-link
-          >
-        </v-container>
 
         <h2 class="text-center">Notifications</h2>
         <div>

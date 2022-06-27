@@ -1,5 +1,5 @@
 import axios from "axios";
 export default axios.create({
-  baseURL: "https://localhost:7299",
+  baseURL: "https://personalworld.azurewebsites.net",
   headers: { "Content-type": "application/json" },
 });

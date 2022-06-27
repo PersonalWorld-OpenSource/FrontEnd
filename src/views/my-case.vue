@@ -47,7 +47,7 @@
         <v-container class="">
           <div v-if="messages.length != 0">
             <v-card v-for="message in messages" class="ma-3 pa-3">
-              <p>{{message.consult.lawyer.fisrtName}}:{{message.messageToSend}}</p>
+              <p>{{message.person.fisrtName}}:{{message.messageToSend}}</p>
             </v-card>
           </div>
           <div class="d-flex mt-custom ">
@@ -112,23 +112,16 @@ export default {
         "consultId": this.oneCase.id,
         "personId": this.$store.getters.getUser.id
       }
-      this.messagesService.create(this.messages)
-      if (this.$store.getters.getUser.type == "lawyer") {
+
+
         this.notificationService.create({
           "title": this.oneCase.title + " " + this.oneCase.state,
           "description": "Has recibido un nuevo mensaje en este caso!",
           "consultId": this.oneCase.id,
-          "personId": this.oneCase.client.id
+          "personId": this.$store.getters.getUser.id
         })
-      } else {
-        this.notificationService.create({
-          "title": this.oneCase.title + " " + this.oneCase.state,
-          "description": "Has recibido un nuevo mensaje en este caso!",
-          "consulId": this.oneCase.id,
-          "personId": this.oneCase.lawyer.id
 
-        })
-      }
+      this.messagesService.create(this.messages)
       this.message = ""
 
     }

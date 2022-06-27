@@ -144,7 +144,9 @@ export default {
             "clientId": this.$store.getters.getUser.id,
             "lawyerId": this.oneLawyer.id
           }
-      ).then(window.location.href = '/myconsults')
+      ).then(
+        this.showConsult()
+      )
 
     }
   }
